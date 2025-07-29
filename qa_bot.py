@@ -41,7 +41,7 @@ from langchain.vectorstores import FAISS
 # Create FAISS index
 db = FAISS.from_documents(docs_split, embeddings)
 
-query = "capital of india?"
+query = "ASK YOUR QUERY?"
 docs = db.similarity_search(query, k=2)
 
 # Print top matching chunks
